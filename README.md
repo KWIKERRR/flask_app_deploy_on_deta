@@ -1,6 +1,7 @@
 #### Hello ! Welcome to my repo to deploy a Flask App with Deta and add some GA tag !
 
-First, install deta :
+First, install deta,
+
 For windows users :
 ```
 $ iwr https://get.deta.dev/cli.ps1 -useb | iex
