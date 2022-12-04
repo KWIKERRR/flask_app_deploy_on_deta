@@ -1,5 +1,7 @@
 #### Hello ! Welcome to my repo to deploy a Flask App with Deta and add some GA tag !
 
+// See requirements.txt \\
+
 First, install deta,
 
 For windows users :
