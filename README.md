@@ -21,6 +21,7 @@ Then deploy the app with :
 $ deta deploy
 ```
 Then, jump to your GA account and you will see : 
+
 ![image](https://user-images.githubusercontent.com/119404054/205500020-757bc843-fea2-41a2-89df-891f399f23ba.png)
 
 
