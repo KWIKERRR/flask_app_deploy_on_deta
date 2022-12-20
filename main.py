@@ -20,5 +20,5 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-250914721-1"></script>
 
 @app.route('/Logger', methods=["GET"])
 def logger() :
-    print('simple echo')
+    print('echo')
     return 'Check your console !' + render_template('templates/log.html')
