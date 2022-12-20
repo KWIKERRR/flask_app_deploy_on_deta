@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -16,3 +16,9 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-250914721-1"></script>
 </script>
  """
  return prefix_google + "Hello World"
+
+
+@app.route('/Logger', methods=["GET"])
+def logger() :
+    print('simple echo')
+    return 'Check your console !' + render_template('templates/log.html')
