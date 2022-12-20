@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+import requests
 
 app = Flask(__name__)
 
@@ -22,3 +23,15 @@ src="https://www.googletagmanager.com/gtag/js?id=UA-250914721-1"></script>
 def logger() :
     print('echo')
     return 'Check your console !' + render_template('log.html')
+
+@app.route('/requestGoogle')
+def reqGA():
+    req = requests.get("https://www.google.com/")
+    print(req)
+    return req.cookies.get_dict()
+
+@app.route('/requestGA')
+def myreqGA():
+    req = requests.get('https://analytics.google.com/analytics/web/#/a250914721w345009383p281161749')
+    print(req)
+    return req.text
