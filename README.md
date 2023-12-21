@@ -1,29 +1,49 @@
-#### Hello ! Welcome to my repo to deploy a Flask App with Deta and add some GA tag !
+# Deploying Flask App with Deta and Adding Google Analytics Tags
 
-First, install deta,
+Hello! Welcome to my repository for deploying a Flask App with Deta and integrating it with Google Analytics. Follow the steps below to set up your project:
 
-For windows users :
-```
-$ iwr https://get.deta.dev/cli.ps1 -useb | iex
-```
-For mac/linux users :
-```
-$ curl -fsSL https://get.deta.dev/cli.sh | sh
-```
+## Step 1: Install Deta CLI
 
-You need to have a deta account and connect with : 
-```
-$ deta login
+For Windows users, open PowerShell and run:
+
+```powershell
+iwr https://get.deta.dev/cli.ps1 -useb | iex
 ```
 
-Go to main.py and change the GA code with yours.
-Then deploy the app with : 
+For Mac/Linux users, open the terminal and run:
+
+```bash
+curl -fsSL https://get.deta.dev/cli.sh | sh
 ```
-$ deta deploy
+
+## Step 2: Connect Deta Account
+
+Ensure you have a Deta account and connect to it using:
+
+```bash
+deta login
 ```
-Then, jump to your GA account in the Real Time / Overview section and you will see : 
+
+## Step 3: Update Google Analytics Code
+
+Navigate to the `main.py` file and replace the existing Google Analytics code with your own.
+
+## Step 4: Deploy the App
+
+Deploy your Flask app using the following command:
+
+```bash
+deta deploy
+```
+
+## Step 5: Check Google Analytics
+
+Visit your Google Analytics account and navigate to the Real Time / Overview section. You should see live data reflecting the activity on your deployed Flask app.
+
+Congratulations! You have successfully deployed a Flask app using Deta and synchronized it with your Google Analytics account.
 
 ![image](https://user-images.githubusercontent.com/119404054/205500020-757bc843-fea2-41a2-89df-891f399f23ba.png)
 
+Feel free to explore and customize your Flask app further. If you encounter any issues or have questions, refer to the Deta and Flask documentation for additional support.
 
-GG ! You have deploy a flask app with deta and sync it with your GA account !
+Happy coding!
